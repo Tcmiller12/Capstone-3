@@ -34,11 +34,5 @@ var requestOptions = {
 
 fetch("https://microbloglite.herokuapp.com/api/users", requestOptions)
   .then(response => response.text())
-  .then(result => 
-    {
-        alert(result);
-        console.log(result);
-    }
-  )
-}
-form.addEventListener('submit',  registerUser)
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));}
