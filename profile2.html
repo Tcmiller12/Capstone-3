@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/profile2.css" />
+    <!--Auth-->
+    <script src="scripts/auth.js"></script>
 </head>
 
 <body>
@@ -49,7 +51,7 @@
             <div class="right__col">
                 <nav>
                     <ul>
-                        <li><a href="">HOME</a></li>
+                        <li><a href="landingpage.html">HOME</a></li>
                         <li><a href="blogs.html">blogs</a></li>
                         <li><a href="profile2.html">PHOTOS</a></li>
                         <input type="text" class="search-input" placeholder="search. . .">
@@ -58,16 +60,16 @@
                     </button>
                     </ul>
                     <button>Follow</button>
-                    <button>Search Photos</button>
+                                        <button id="logout" onclick="logout ()">Logout </button>
                 </nav>
 
                 <div class="photos">
-                    <img src="img/img_1.avif" alt="Photo" />
-                    <img src="img/img_2.avif" alt="Photo" />
-                    <img src="img/img_3.avif" alt="Photo" />
-                    <img src="img/img_4.avif" alt="Photo" />
-                    <img src="img/img_5.avif" alt="Photo" />
-                    <img src="img/img_6.avif" alt="Photo" />
+                    <img src="images/img_1.avif" alt="Photo" />
+                    <img src="images/img_2.avif" alt="Photo" />
+                    <img src="images/img_3.avif" alt="Photo" />
+                    <img src="images/img_4.avif" alt="Photo" />
+                    <img src="images/img_5.avif" alt="Photo" />
+                    <img src="images/img_6.avif" alt="Photo" />
                 </div>
             </div>
         </div>
@@ -83,6 +85,11 @@
         <span>&& Hashira</span>
     </footer>
     <!-- end of footer -->
-    
+    <script>
+        // Check if user is logged in
+        document.addEventListener("DOMContentLoaded", function(){
+            if (isLoggedIn() === false) window.location.href = "signin.html";
+        });
+</script>
 </body>
 </html>

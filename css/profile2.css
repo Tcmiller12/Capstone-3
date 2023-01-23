@@ -192,10 +192,13 @@ a {
     margin-top: 0;
   }
 }
+
+
+
 /* footer */
 footer {
-    background: var(--exDark);
-    color: #fff;
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    color: black;
     text-align: center;
     padding: 2rem 0;
 }
@@ -207,8 +210,8 @@ footer {
 }
 
 .social-links a {
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid black;
+    color: black;
     display: block;
     width: 40px;
     height: 40px;
@@ -222,7 +225,7 @@ footer {
 }
 
 .social-links a:hover {
-    background: #fff;
+    background: grey;
     color: var(--exDark);
 }
 
